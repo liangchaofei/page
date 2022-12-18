@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    我是网页
+    <script>
+        var m1 = '我是傻x吗？';
+        var m2 = '我是大傻x吗？'
+        var m3 = '我是二傻x吗？'
+        var r1 = window.confirm(m1);
+        if(r1){
+            var r2 = window.confirm(m2);
+            if(r2){
+                var r3 = window.confirm(m3);
+            }else{
+                window.confirm(m2)
+            }
+        }else{
+            var r3 = window.confirm(m3);
+            if(r3){
+                var r2 = window.confirm(m2);
+            }
+        }
+    </script>
 </body>
 </html>
